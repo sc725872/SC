@@ -1,0 +1,11 @@
+<!--pages/newsDetail/newsDetail.wxml-->
+<view class="container">
+  <view class="title">{{article.title}}</view>
+  <view class="poster">
+    <image src="{{article.poster}}"/>
+  </view>
+  <view class="content">
+    <text space="emsp">{{article.content}}</text>
+  </view>
+  <view class="add_date">{{article.add_date}}</view>
+</view>
