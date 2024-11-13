@@ -16,6 +16,5 @@ Page({
     wx.navigateTo({
       url:`../newsDetail/newsDetail?newsID=${id}`
     })
-    console.log(e);
   }
 })

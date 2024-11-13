@@ -9,3 +9,14 @@
   </view>
   <view class="add_date">{{article.add_date}}</view>
 </view>
+
+<view class="container">
+  <view class="title">这个地方是新闻的标题</view>
+  <view class="poster">
+    <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0914%2F80722048j00sjs5au001id000u000k0m.jpg&thumbnail=750x2147483647&quality=75&type=webp"/>
+  </view>
+  <view class="content">
+    <text space="emsp">新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容新闻的具体内容</text>
+  </view>
+  <view class="add_date">时间：新闻的时间xxx</view>
+</view>

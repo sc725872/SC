@@ -15,12 +15,10 @@ swiper image {
 
 .list-item {
   border-bottom: 1rpx solid gray;
-}
-
-.list-item navigator {
   width: 100%;
   display: flex;
 }
+
 
 .list-item image {
   width: 250rpx;
@@ -45,12 +43,4 @@ swiper image {
 
 .news-date {
   font-size: 10pt;
-}
-.navation{
-  color: blue; /* 文本颜色 */
-  font-size: 14px; /* 文本大小 */
-  text-align: left; /* 文本对齐 */
-  background-color: transparent; /* 背景色 */
-  margin: 0; /* 边距 */
-  padding: 0; /* 内边距 */
 }

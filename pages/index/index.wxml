@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <!-- 轮播图 -->
+<!-- 动态实现 -->
 <swiper 
 indicator-dots="true" 
 autoplay="true" 
@@ -12,15 +13,70 @@ duration="1000"
     </swiper-item>
   </block>
 </swiper>
+<!-- 静态实现 -->
+<!-- <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <swiper-item> 
+    <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0914%2F80722048j00sjs5au001id000u000k0m.jpg&thumbnail=750x2147483647&quality=75&type=webp" class="slide-image"/>
+  </swiper-item>
+  <swiper-item> 
+    <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0914%2F4ff429ddj00sjs0wv00rrd000u000hqg.jpg&thumbnail=750x2147483647&quality=75&type=webp" class="slide-image"/>
+  </swiper-item>
+  <swiper-item> 
+    <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0914%2F26f60b76j00sjsdsj001qd000hs00dcg.jpg&thumbnail=750x2147483647&quality=75&type=webp" class="slide-image"/>
+  </swiper-item>
+</swiper> -->
+
 <!-- 列表 -->
+<!-- 动态实现 -->
 <view id="news-list">
-  <view class="list-item" wx:for="{{newsList}}" wx:for-item="news" wx:key="id" bind:tap="getInfo" data-id="{{news.id}}">
-     <navigator >
+  <view class="list-item" wx:for="{{newsList}}" wx:for-item="news" wx:key="id" bind:tap="getInfo" data-id="{{news.id}}">  
       <image src="{{news.poster}}"/>
       <view class="news-text">
         <text class="news-title">{{news.title}}</text>
         <text class="news-date">{{news.add_date}}</text>
       </view>
-    </navigator> 
   </view>
 </view>
+<!-- 静态实现
+<view id="news-list">
+  <view class="list-item">
+    <navigator url="../newsDetail/newsDetail">
+      <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0914%2F80722048j00sjs5au001id000u000k0m.jpg&thumbnail=750x2147483647&quality=75&type=webp"/>
+      <view class="news-text">
+        <text class="news-title">王毅在圣彼得堡时，布林肯在基辅</text>
+        <text class="news-date">2024-09-14 09:53:30</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="list-item">
+    <navigator url="../newsDetail/newsDetail">
+      <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0914%2F80722048j00sjs5au001id000u000k0m.jpg&thumbnail=750x2147483647&quality=75&type=webp"/>
+      <view class="news-text">
+        <text class="news-title">王毅在圣彼得堡时，布林肯在基辅</text>
+        <text class="news-date">2024-09-14 09:53:30</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="list-item">
+    <navigator url="../newsDetail/newsDetail">
+      <image src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0914%2F80722048j00sjs5au001id000u000k0m.jpg&thumbnail=750x2147483647&quality=75&type=webp"/>
+      <view class="news-text">
+        <text class="news-title">王毅在圣彼得堡时，布林肯在基辅</text>
+        <text class="news-date">2024-09-14 09:53:30</text>
+      </view>
+    </navigator>
+  </view>
+</view> -->
+
+<!-- 列表
+<view id="news-list">
+  <view class="list-item" wx:for="{{newsList}}" wx:for-item="news" wx:key="id">
+    <navigator url="../newsDetail/newsDetail?newsID={{news.id}}">
+      <image src="{{news.poster}}"/>
+      <view class="news-text">
+        <text class="news-title">{{news.title}}</text>
+        <text class="news-date">{{news.add_date}}</text>
+      </view>
+    </navigator>
+  </view>
+</view> -->
